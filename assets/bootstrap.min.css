@@ -5295,7 +5295,7 @@ a.btn:focus {
 .alert {
     position: relative;
     padding: 1rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     border: 1px solid transparent;
     border-radius: .25rem
 }
