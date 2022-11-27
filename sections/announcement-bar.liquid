@@ -6,16 +6,13 @@
           <p class="announcement-bar__message {{ block.settings.text_alignment }}">
             {{ block.settings.text | escape }}
             {%- if block.settings.link != blank -%}
-              {% render 'icon-arrow' %}
+              <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+            {%- endif -%}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            {%- if block.settings.link != blank -%}
+              </a>
             {%- endif -%}
           </p>
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-          {%- endif -%}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
         {%- endif -%}
       </div>
   {%- endcase -%}
