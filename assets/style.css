@@ -144,6 +144,13 @@ a:hover {
   transform: scale(1.1);
 }
 
+
+/* ANNOUNCEMENT SECTION CSS */
+
+.announcement-bar__message, .announcement-bar__message a, .announcement-bar__message button {
+    color: var(--white);
+}
+
 /* TOPBAR SECTION CSS */
 
 .topbar {
