@@ -1,8 +1,8 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <div class="alert alert-dismissible fade show text-center" role="alert">
+        <p><strong>Holy guacamole!</strong> You should check in on some of those fields below.</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
       <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
