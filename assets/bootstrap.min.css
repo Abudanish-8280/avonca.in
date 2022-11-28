@@ -6642,7 +6642,7 @@ a.btn:focus {
 }
 
 .carousel-control-prev-icon {
-    background-image: url(assets/left-arrow.png);
+    background-image: url({{ 'left-arrow.png' | asset_url }});
 }
 
 .carousel-control-next-icon {
