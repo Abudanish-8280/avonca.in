@@ -5843,10 +5843,9 @@ a.btn:focus {
     height: 1em;
     padding: .25em .25em;
     color: #000;
-    background: url(../assets/cross.png);
+    background: url(../assets/cross.png)no-repeat center center/contain;
     border: 0;
     border-radius: .25rem;
-    opacity: .5
 }
 
 .btn-close:hover {
