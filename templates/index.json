@@ -56,12 +56,12 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/slider-1.jpg",
-            "title": "Banner Title",
-            "title_color": "#FFFFFF",
-            "banner_heading_size": 28,
+            "title": "Indoor Plants Bundle",
+            "title_color": "#000000",
+            "banner_heading_size": 38,
             "description": "",
-            "banner_links": "",
-            "banner_label": ""
+            "banner_links": "#",
+            "banner_label": "Read More"
           }
         }
       },
