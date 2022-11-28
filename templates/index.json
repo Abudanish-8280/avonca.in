@@ -75,11 +75,24 @@
             "banner_links": "#",
             "banner_label": "Read More"
           }
+        },
+        "8b8b8b17-c424-4d14-9980-d4756f324757": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider-3.jpg",
+            "title": "Live With Nature",
+            "title_color": "#FFFFFF",
+            "banner_heading_size": 28,
+            "description": "Bringing life to people through beautiful indoor plants and gardens.",
+            "banner_links": "#",
+            "banner_label": "Read More"
+          }
         }
       },
       "block_order": [
         "e45d254f-dc91-46ca-ad74-9d33644cca51",
-        "4a30048f-cbcc-4516-8a57-e277f90028fb"
+        "4a30048f-cbcc-4516-8a57-e277f90028fb",
+        "8b8b8b17-c424-4d14-9980-d4756f324757"
       ],
       "settings": {
       }
