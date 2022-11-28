@@ -5843,7 +5843,7 @@ a.btn:focus {
     height: 1em;
     padding: .25em .25em;
     color: #000;
-    background: url(../assets/right-arrow.png);
+    background: url(../assets/cross.png);
     border: 0;
     border-radius: .25rem;
     opacity: .5
