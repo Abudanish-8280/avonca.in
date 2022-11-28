@@ -9,7 +9,7 @@
   <div class="carousel-item {% if forloop.first %}active {%endif%}">
     <img src="{{ block.settings.image | image_url }}" alt="" />
     <div class="carousel-caption d-none d-md-block">
-    <h1 style="color:{{ block.settings.title_color }};font-size:{{ block.settings.banner_heading_size }}px">
+    <h1 style="color:{{ block.settings.title_color }};font-size:{{ block.settings.banner_heading_size }}px;font-weight: {{ block.settings.banner_heading_weight }}">
     {{ block.settings.title }}</h1>
      <p>{{ block.settings.description}}</p>
      <a href="{{ block.settings.banner_links }}" class="btn btn-primary">{{ block.settings.banner_label}}</a>
