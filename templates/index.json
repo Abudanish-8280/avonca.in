@@ -63,10 +63,23 @@
             "banner_links": "#",
             "banner_label": "Read More"
           }
+        },
+        "4a30048f-cbcc-4516-8a57-e277f90028fb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider-2.jpg",
+            "title": "Find Your Dream Plants",
+            "title_color": "#000000",
+            "banner_heading_size": 38,
+            "description": "Gift a green life to your home!",
+            "banner_links": "#",
+            "banner_label": "Read More"
+          }
         }
       },
       "block_order": [
-        "e45d254f-dc91-46ca-ad74-9d33644cca51"
+        "e45d254f-dc91-46ca-ad74-9d33644cca51",
+        "4a30048f-cbcc-4516-8a57-e277f90028fb"
       ],
       "settings": {
       }
