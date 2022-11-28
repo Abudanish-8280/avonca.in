@@ -17,6 +17,7 @@ body {
 	font-family: 'Saira', sans-serif;
     scroll-behavior: smooth;
     overflow: inherit !important;
+    background:red !important; 
 }
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, select {
   background: none;
