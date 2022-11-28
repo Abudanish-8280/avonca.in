@@ -2294,6 +2294,8 @@ input[type='checkbox'] {
 .header__heading {
   margin: 0;
   line-height: 0;
+  display:flex;
+  justify-content:center;
 }
 
 .header > .header__heading-link {
