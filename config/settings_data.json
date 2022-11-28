@@ -145,6 +145,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
+          "phone_number": "+91 630-559-7058",
           "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_width": 120,
           "logo_position": "top-left",
