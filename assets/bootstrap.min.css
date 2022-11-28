@@ -6642,11 +6642,11 @@ a.btn:focus {
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../images/left-arrow.png);
+    background-image: url(assets/left-arrow.png);
 }
 
 .carousel-control-next-icon {
-    background-image: url(../images/right-arrow.png)
+    background-image: url(assets/right-arrow.png)
 }
 
 .carousel-indicators {
