@@ -1,12 +1,95 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+  {% for block in section.blocks %}
+  <div class="carousel-item {% if forloop.first %}active {%endif%}">
+    <img src="{{ block.settings.image | image_url }}" alt="" />
+    <div class="carousel-caption d-none d-md-block">
+    <h1 style="color:{{ block.settings.title_color }};font-size:{{ block.settings.banner_heading_size }}px">{
+  { block.settings.title } }</h1>
+     <p>{{ block.settings.description}}</p>
+     <a href="{{ block.settings.banner_links }}" class="btn btn-primary">{{ block.settings.banner_label}}</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Main Banner",
+  "tag": "section",
+  "class": "mainbanner",
+  "limit": 1,
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Banner Title"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Heading color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "banner_heading_size",
+          "min": 22,
+          "max": 38,
+          "step": 1,
+          "unit": "px",
+          "label": "Banner Heading Size",
+          "default": 28
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Banner Description"
+        },
+        {
+          "type": "url",
+          "id": "banner_links",
+          "label": "Banner Links"
+        },
+        {
+          "type": "text",
+          "id": "banner_label",
+          "label": "Banner Label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+    "name": "Home Banner",
+    "category": "slider"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
